@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @frog.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @frog.description %>
+</p>
+
+<p>
+  <strong>Picture:</strong>
+  <%= @frog.picture %>
+</p>
+
+<%= link_to 'Edit', edit_frog_path(@frog) %> |
+<%= link_to 'Back', frogs_path %>
