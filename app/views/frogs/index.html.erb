@@ -17,7 +17,7 @@
       <tr>
         <td><%= frog.name %></td>
         <td><%= frog.description %></td>
-        <td><%= frog.picture %></td>
+        <td><%= image_tag frog.picture_url(:thumb) if frog.picture? %></td>
         <td><%= link_to 'Show', frog %></td>
         <td><%= link_to 'Edit', edit_frog_path(frog) %></td>
         <td><%= link_to 'Destroy', frog, method: :delete, data: { confirm: 'Are you sure?' } %></td>
